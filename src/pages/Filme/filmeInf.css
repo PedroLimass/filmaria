@@ -1,0 +1,9 @@
+.FilmeInfo {
+	display: flex;
+	flex-direction: column;
+	max-width: 900px;
+}
+
+.FilmeInfo img {
+	border-radius: 50px;
+}

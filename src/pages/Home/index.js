@@ -33,12 +33,12 @@ class Home extends Component{
 			<div className='container'>
 
 				<div className='listaFilmes'>
-					{this.state.filmes.map((filmes) => {
+					{this.state.filmes.map((filme) => {
 						return(
-							<article key = {filmes.id} className=''filmesPost>
-								<strong>{filmes.nome}</strong>
-								<img src={filmes.foto} alt='Capa'/>
-								<Link to="/">Acessar</Link>
+							<article key = {filme.id} className='filmesPost'>
+								<strong>{filme.nome}</strong>
+								<img src={filme.foto} alt='Capa'/>
+								<Link to={`/filme/${filme.id}`}>Acessar</Link>
 							</article>
 						);
 					})}
@@ -48,4 +48,5 @@ class Home extends Component{
 		);
 	}
 }
+
 export default Home;
